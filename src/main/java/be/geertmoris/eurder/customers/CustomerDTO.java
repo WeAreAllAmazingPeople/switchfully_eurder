@@ -11,24 +11,29 @@ public class CustomerDTO {
     public CustomerDTO() {
     }
 
-    public void setFirstName(String firstName) {
+    public CustomerDTO setFirstName(String firstName) {
         this.firstName = firstName;
+        return this;
     }
 
-    public void setLastName(String lastName) {
+    public CustomerDTO setLastName(String lastName) {
         this.lastName = lastName;
+        return this;
     }
 
-    public void setEmail(String email) {
+    public CustomerDTO setEmail(String email) {
         this.email = email;
+        return this;
     }
 
-    public void setAddress(Address address) {
+    public CustomerDTO setAddress(Address address) {
         this.address = address;
+        return this;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public CustomerDTO setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+        return this;
     }
 
     public String getFirstName() {

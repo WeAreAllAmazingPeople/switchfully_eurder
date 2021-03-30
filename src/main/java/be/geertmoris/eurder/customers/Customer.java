@@ -12,7 +12,7 @@ public class Customer {
     private String phoneNumber;
 
     public Customer(String firstName, String lastName, String email, Address address, String phoneNumber) {
-        this(UUID.randomUUID().toString(),firstName,lastName,email,address,phoneNumber);
+        this(UUID.randomUUID().toString(), firstName, lastName, email, address, phoneNumber);
     }
 
     public Customer(String id, String firstName, String lastName, String email, Address address, String phoneNumber) {
@@ -22,40 +22,40 @@ public class Customer {
         assertAddress(address);
         assertPhoneNumber(phoneNumber);
 
-        this.id=id;
-        this.firstName=firstName;
-        this.lastName=lastName;
-        this.email=email;
-        this.address= address;
-        this.phoneNumber=phoneNumber;
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
     }
 
     private void assertFirstName(String firstName) {
-        if (firstName  == null) {
+        if (firstName == null) {
             throw new IllegalArgumentException("First name must be specified");
         }
     }
 
     private void assertLastName(String lastName) {
-        if (lastName  == null) {
+        if (lastName == null) {
             throw new IllegalArgumentException("Last name must be specified");
         }
     }
 
     private void assertEmail(String email) {
-        if (email  == null) {
+        if (email == null) {
             throw new IllegalArgumentException("Email must be specified");
         }
     }
 
     private void assertAddress(Address address) {
-        if (address  == null) {
+        if (address == null) {
             throw new IllegalArgumentException("Address must be specified");
         }
     }
 
     private void assertPhoneNumber(String phoneNumber) {
-        if (phoneNumber  == null) {
+        if (phoneNumber == null) {
             throw new IllegalArgumentException("Phone number must be specified");
         }
     }
